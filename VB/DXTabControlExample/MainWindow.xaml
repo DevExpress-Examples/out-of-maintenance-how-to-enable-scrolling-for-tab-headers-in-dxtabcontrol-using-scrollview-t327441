@@ -1,0 +1,47 @@
+﻿<dx:DXWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxcn="http://schemas.devexpress.com/winfx/2008/xaml/core/internal" 
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        dx:ThemeManager.ThemeName="Office2013"
+        x:Class="DXTabControlExample.MainWindow"
+        Title="MainWindow" Height="350" Width="300">
+    <Grid>
+        <dx:DXTabControl Margin="0,0,0,20">
+            <dx:DXTabItem Header="General">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Tools">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Hardware">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Sharing">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Security">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="ReadyBoost">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Quota">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Customize">
+                <Grid Background="Transparent"/>
+            </dx:DXTabItem>
+            <dx:DXTabControl.View>
+                <dx:TabControlScrollView HeaderOrientation="{Binding ElementName=headerOrientationComboBox, Path=EditValue, Mode=TwoWay}"/>
+            </dx:DXTabControl.View>
+        </dx:DXTabControl>
+        <dxe:ComboBoxEdit VerticalAlignment="Bottom" Name="headerOrientationComboBox" IsTextEditable="False" NullText="Header orientation">
+            <dxmvvm:Interaction.Behaviors>
+                <dxmvvm:EnumItemsSourceBehavior EnumType="{x:Type dx:HeaderOrientation}"/>
+            </dxmvvm:Interaction.Behaviors>
+        </dxe:ComboBoxEdit>
+    </Grid>
+</dx:DXWindow>
