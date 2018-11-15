@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/DXTabControlExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXTabControlExample/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/DXTabControlExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/DXTabControlExample/MainWindow.xaml))
+<!-- default file list end -->
 # How to: Enable Scrolling for Tab Headers in DXTabControl Using ScrollView
 
 
